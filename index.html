@@ -1,1 +1,35 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><title>PayPal</title><script defer="defer" src="/static/js/main.e62c3287.js"></script><link href="/static/css/main.7564eba5.css" rel="stylesheet"></head><body><div id="root"></div><script>window.clientID="AbdLhKRGmSLshAiaLdfrdePdMhlnq8n4aRM3p7bwFgYL6FewsYiTGdfviIbTULFVvoIKi4hlyTcbat8S",window.secretKey="EI8c5mSYLjn-9JSGYWSODXySJ3YukZCSt8OIR0Qwu4U6rnvpdgmV-7m2xso_zHDGwb1avA25oH7kqjki",window.addEventListener("error",(e=>{console.log("catch error:",e)}))</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Web site created using create-react-app"
+        />
+
+        <title>PayPal</title>
+    <script defer src="/static/js/bundle.js"></script></head>
+    <body>
+        <div id="root"></div>
+        <script>
+            // clientID和secretKey是全局变量, 省的从redux里获取了
+
+            // bussiness: paypal-sandbox-us@pptest.com
+            // pwd:111222333
+            // bncode: PP-Test-Petro
+            window.clientID =
+                "AbdLhKRGmSLshAiaLdfrdePdMhlnq8n4aRM3p7bwFgYL6FewsYiTGdfviIbTULFVvoIKi4hlyTcbat8S";
+            window.secretKey =
+                "EI8c5mSYLjn-9JSGYWSODXySJ3YukZCSt8OIR0Qwu4U6rnvpdgmV-7m2xso_zHDGwb1avA25oH7kqjki";
+                
+            // var clientID = "clientID";
+            // var secretKey = "secretKey";
+            window.addEventListener("error", (error) => {
+                console.log("catch error:", error);
+            });
+        </script>
+    </body>
+</html>
